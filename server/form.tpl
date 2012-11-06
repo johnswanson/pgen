@@ -245,7 +245,7 @@
 					prefer, you can run everything locally!  
 				</p>
 				<p>
-					View source at <a href="https://github.com/johnswanson/pwgen-go">github.</a>
+					View source at <a href="https://github.com/johnswanson/pgen">github.</a>
 				</p>
 				<p>
 					Technical details: your service and passphrase are concatenated, then run through

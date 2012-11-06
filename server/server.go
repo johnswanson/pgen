@@ -9,7 +9,7 @@ type server struct{}
 
 func main() {
 	var handler server
-	http.ListenAndServe("localhost:80", handler)
+	http.ListenAndServe("mawud.com:80", handler)
 }
 
 func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {

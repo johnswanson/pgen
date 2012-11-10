@@ -68,6 +68,7 @@ $("input").keypress(function(e){
 				  other
 
 		pw = computePassword(master, service, Allowed, length)
+		$("#result").val("")
 		$("#result").slideDown(100, function(){
 			$("#result").val(pw)
 			$("#result").focus()

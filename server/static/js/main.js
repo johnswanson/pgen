@@ -35,6 +35,10 @@ $("#result").blur(function(){
 	$("#result").text("")
 })
 
+$("#result").click(function(){
+	$("#result").select()
+})
+
 $("#showmaster").change(function(){
 	if ($("#showmaster").is(":checked")) {
 		$("#masterpass-shown").show()
@@ -56,6 +60,7 @@ $("input").keypress(function(e){
 		master = $("#showmaster").is(":checked")?$("#masterpass-shown").val():$("#masterpass").val()
 
 		service = $("#service").val().toLowerCase()
+		$("#service").val(service)
 
 		alpha = $("#alpha").is(":checked")
 		numbers = $("#numer").is(":checked")

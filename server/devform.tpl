@@ -23,6 +23,7 @@
 
         <!-- Add your site or application content here -->
 		<div id="formbox" style="display:none;">
+						<span>type service. type passphrase. hit enter. that's it!</span>
 			<input readonly="readonly" id="result" type="text" size="25" placeholder="RESULT" style="display:none;"/>
 			<form>
 				<div id="biginputsbox">
@@ -77,7 +78,6 @@
 					anyone trying to generate a list of possible output passwords).
 				</p>
 			</div>
-			<h2 id="loading"></h2>
 		</div>
 
 

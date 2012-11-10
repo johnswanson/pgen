@@ -24,7 +24,15 @@ $(document).ready(function(){
 	$("#formbox").fadeIn(1200)
 	$("#service").fadeIn(200)
 	$("#masterpass").fadeIn(1200)
-	$("#service").focus()
+	if (!("autofocus" in document.createElement("input"))) {
+		$("#service").focus()
+	}
+})
+
+$("#result").blur(function(){
+	$("#service").select()
+	$("#result").slideUp(200)
+	$("#result").text("")
 })
 
 $("#showmaster").change(function(){
@@ -62,6 +70,7 @@ $("input").keypress(function(e){
 		pw = computePassword(master, service, Allowed, length)
 		$("#result").slideDown(100, function(){
 			$("#result").val(pw)
+			$("#result").focus()
 			$("#result").select()
 		})
 	}

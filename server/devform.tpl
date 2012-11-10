@@ -26,7 +26,7 @@
 			<input readonly="readonly" id="result" type="text" size="25" placeholder="RESULT" style="display:none;"/>
 			<form>
 				<div id="biginputsbox">
-					<input id="service" type="text" name="service" placeholder="SERVICE" size="25" style="display:none;"/>
+					<input id="service" type="text" name="service" placeholder="SERVICE" size="25" style="display:none;" autofocus />
 					<div id="masterpassbox">
 						<input class="mastertext" id="masterpass" size="25" type="password" placeholder="PASSPHRASE" name="master" style="display:none;"/>
 						<input class="mastertext" id="masterpass-shown" size="25" type="text" style="display:none" placeholder="PASSPHRASE" name="master" />

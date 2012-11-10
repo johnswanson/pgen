@@ -139,6 +139,7 @@ func getPassword(pw pgen.PasswordGenerator) {
 		fmt.Print("(visible) Enter your master passphrase: ")
 		in := bufio.NewReader(os.Stdin)
 		secr, _ = in.ReadString('\n')
+		secr = strings.TrimRight(secr, "\n")
 	} else {
 		secr, _ = pwinput("Enter your master passphrase\n")
 	}

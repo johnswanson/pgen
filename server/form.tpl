@@ -23,7 +23,7 @@
 
         <!-- Add your site or application content here -->
 		<div id="formbox" style="display:none;">
-			<input readonly="readonly" id="result" type="text" size="25" placeholder="RESULT" style="display:none;"/>
+			<input readonly="readonly" class="deselected-result" id="result" type="text" size="25" style="display:none;"/>
 			<form>
 				<div id="biginputsbox">
 					<input id="service" type="text" name="service" placeholder="SERVICE" size="25" style="display:none;" autofocus />

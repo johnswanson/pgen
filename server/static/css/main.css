@@ -7,7 +7,7 @@
 body {
 	font-family: 'Scada', sans-serif;
 	text-align:center;
-	background-image:url('/static/img/asfalt.png');
+	background-image:url('/static/img/hexabump/hexabump.png');
 	color:#CCC;
 }
 input {
@@ -59,12 +59,24 @@ input:focus {
 div#formbox {
 	margin-top:100px;
 }
-#result {
+.selected-result {
 	border-color: #77DD00;
 	border-radius: 5px;
 	border-style: solid;
 	border-width: 2px;
 	box-shadow: #77DD00 0px 0px 16px 0px, #77DD00 0px 0px 20px 0px inset;
+}
+
+.deselected-result {
+	border-color: #222222;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	box-shadow: #222222 0px 0px 12px 0px, #222222 0px 0px 10px 0px inset;
+}
+
+#result {
+	background-image:url('/static/img/hexabump/hexabump.png');
 	margin-bottom:15px;
 	display:block;
 	font-size:32px;
